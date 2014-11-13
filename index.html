@@ -3,11 +3,22 @@
 <head>
   <title></title>
 </head>
+  <h1>XKCD rules pasword generator</h1>
   <body>
-    <form method="get" action="cgi-bin/hello2.py">
-      <label>Enter your name</label>
-      <input type="text" name="thename" value="Nothing"></input>
-      <input type="submit"></input>
+    <form method="get" action="cgi-bin/xkcd.py">
+      <label>select password peramaters</label><br>
+      <input type="checkbox" name="three">3 == e<br>
+      <input type="checkbox" name="zero">0 == o<br>
+      <input type="checkbox" name="one">1 == l<br>
+      <input type="checkbox" name="five">5 == s<br>
+      <input type="checkbox" name="four">4 == a<br>
+      <input type="checkbox" name="cFirst">Capitalize first word<br>
+      <input type="checkbox" name="cSecond">Capitalize second word<br>
+      <input type="checkbox" name="cThird">Capitalize third word<br>
+      <input type="checkbox" name="cFourth">Capitalize fourth word<br>
+      <input type="checkbox" name="cFifth">Capitalize fifth word<br>
+
+      <input type="submit" value="generate" ></input>
 
     </form>
   </body>
